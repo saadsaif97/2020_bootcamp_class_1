@@ -21,12 +21,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     uses: actions/checkout@v2
-      # Runs a single command using the runners shell
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: 12
-      - name: Install surge
-        run: npm install --global surge
-      - name: Run surge
-        run: surge
+    # Runs a single command using the runners shell
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.1.5
+      with:
+        node-version: 12
+    - name: Install surge
+      run: npm install --global surge
+    - name: Run surge
+      run: surge
