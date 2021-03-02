@@ -29,4 +29,4 @@ jobs:
       - name: Install surge
         run: npm install --global surge
       - name: Run surge
-        run: surge
+        run: surge ./ saadsaif_first_assignment.surge.sh
